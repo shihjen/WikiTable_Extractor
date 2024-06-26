@@ -26,17 +26,20 @@ with col1:
     url = container.text_input('Paste the URL Link')
 
     if url:
-        html = requests.get(url).content
-        df_list = pd.read_html(html)
+        try:
+            html = requests.get(url).content
+            df_list = pd.read_html(html)
 
-        number_table = len(df_list)
+            number_table = len(df_list)
 
-        container.write(f'Total {number_table} table(s) found in the webpage {url}.')
+            container.write(f'Total {number_table} table(s) found in the webpage {url}.')
 
-        with col2:
-            if number_table > 0:
-                for i in range(number_table):
-                    st.markdown(f'### Table {i+1}')
-                    st.dataframe(df_list[i], use_container_width=True)
+            with col2:
+                if number_table > 0:
+                    for i in range(number_table):
+                        st.markdown(f'### Table {i+1}')
+                        st.dataframe(df_list[i], use_container_width=True)
+        except:
+            st.write('Invalid Input')
 
 
