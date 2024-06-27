@@ -30,8 +30,7 @@ By entering the URL of a Wikipedia page, users can quickly and efficiently pull 
 This tool leverages the extensive data resources available on Wikipedia, making it a valuable asset for anyone needing to analyze, manipulate, or repurpose structured data.
 '''
 
-
-
+# app body
 col1, col2 = st.columns([1,3],gap='large')
 
 with col1:
