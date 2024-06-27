@@ -14,4 +14,4 @@ The WikiTable Extractor is designed to simplify the process of extracting tables
 
 ![app](img/app.png)
 
-<div>⏩ <a href ="https://shihjen-pdf-imageextractor-app-473w1q.streamlit.app/">Web Application</a></div>
+<div>⏩ <a href ="https://wikipediatableextracto-hrd5pkiygh7wjk8zsmf4ac.streamlit.app/">Web Application</a></div>
